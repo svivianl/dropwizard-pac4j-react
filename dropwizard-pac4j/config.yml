@@ -1,0 +1,23 @@
+template: Hello, %s!
+defaultName: Stranger
+
+server:
+  applicationConnectors:
+    - type: http
+      port: ${HTTP_PORT:-8080}
+  adminConnectors:
+    - type: http
+      port: ${HTTP_ADMIN_PORT:-8081}
+  minThreads: 10
+  maxThreads: 20
+
+
+##
+## Testing SSO
+##
+ssoClientId: ${SSO_CLIENT_ID}
+ssoClientSecret: ${SSO_CLIENT_SECRET}
+ssoDomain: ${SSO_DOMAIN}
+# ssoDiscoveryUri: ${SSO_DISCOVERY_UI}
+ssoCallbackPath: ${SSO_CALLBACK_PATH}
+ssoSessionKey: ${SSO_SESSION_KEY}
