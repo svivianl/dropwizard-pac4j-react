@@ -19,3 +19,11 @@ A mix and match of [Use Pac4j to Lock Down Your Java REST API](https://developer
 - [Use React and Spring Boot to Build a Simple CRUD App](https://developer.okta.com/blog/2022/06/17/simple-crud-react-and-spring-boot)
 - [dropwizard-pac4j](https://github.com/pac4j/dropwizard-pac4j)
 - [dropwizard-pac4j-demo](https://github.com/pac4j/dropwizard-pac4j-demo)
+
+# FUTURE FEATURES
+
+- Add PKCE
+
+# KNOWN ISSUES
+
+- When the user has already been authenticated and they press the Login butt, the page will redirect to `/api/private` and they will see the 404 error. To workaround it, the page's cookies must be deleted and the user must go to the `http://localhost:3000` page
