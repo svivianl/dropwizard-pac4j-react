@@ -1,11 +1,9 @@
 # Service Bootstrap
 
-To build the application: `mvn clean package`
-
-To run it: 
 1. copy `config.yml` file as, for example, `override.yml`
 2. make the necessary changes to the file and override the required variables (variables whose prefix is `SSO_`)
-3. run `java -jar target/dropwizard-pac4j-1.0.0-SNAPSHOT.jar server override.yml`
+3. build the application: `mvn clean package`
+4. run `java -jar target/dropwizard-pac4j-1.0.0-SNAPSHOT.jar server override.yml`
 
 
 **General**
